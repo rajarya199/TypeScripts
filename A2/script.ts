@@ -58,3 +58,11 @@ let user:{name:string,age:number}={
 let score:string |number;
 score=100;
 score="A+"
+
+//enum type--options
+enum Roles {
+    ADMIN,
+    USER,
+    GUEST
+}
+let myRole: Roles = Roles.ADMIN;
