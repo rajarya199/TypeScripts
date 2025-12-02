@@ -16,3 +16,34 @@ let isAdmin:boolean=true
 
 //type inference
 let city = "Kathmandu"; // TS knows it is string
+
+
+//any  vs unknowm
+
+//any disables type checking.
+//unknown is safer and requires type checking before usage.
+
+
+let data: any;
+
+data = "Hello";
+data = 123;
+data = true;
+
+data.toUpperCase(); // No error (but if data is number → runtime crash)
+
+
+let value: unknown;
+
+value = "Hello";
+value = 123;
+value = true;
+
+// ❌ Not allowed without checking:
+// value.toUpperCase(); // ❌ ERROR
+
+ value = "Hello TypeScript";
+
+if (typeof value === "string") {
+  console.log(value.toUpperCase()); // ✔ Safe
+}
