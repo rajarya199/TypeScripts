@@ -9,7 +9,7 @@ let person: [string, number] = ["Alice", 30]; //tuple ->datatype for each elemen
 
 
 //
-let user:string="hari"
+let naam:string="hari"
 let age:number=55
 let isAdmin:boolean=true
 
@@ -47,3 +47,14 @@ value = true;
 if (typeof value === "string") {
   console.log(value.toUpperCase()); // ✔ Safe
 }
+
+//object type
+let user:{name:string,age:number}={
+    name:"ram",
+    age:44
+}
+
+//union type -allow multiple types
+let score:string |number;
+score=100;
+score="A+"
