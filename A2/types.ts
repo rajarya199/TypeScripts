@@ -34,3 +34,18 @@ type Add=(a:number,b:number)=>number;
 const sum:Add=(x,y)=>x+y;
 
 
+//intersection type
+type Person = { name: string };
+type Employee = { salary: number };
+
+type Staff = Person & Employee;
+
+const employee: Staff = {
+  name: "Rajan",
+  salary: 50000,
+};
+
+
+//tuple type
+type RGB=[number, number, number];
+const color:RGB=[255,0,255]; 
