@@ -24,3 +24,31 @@ const prod1:Product={
     name:"Laptop",
     category:"Electronics"
 }
+
+//interface extending
+
+interface person{
+    name:string;
+}
+
+interface Student extends Person{
+    grade:number;
+}
+
+const s:Student={name:"Gita",grade:10}
+
+
+//declaration merging
+// This cannot be done with type aliases.
+interface Box{
+    width:number;
+}
+
+interface Box{
+    length:number;
+}
+
+const b1:Box={
+    width:10,
+    length:20
+}
