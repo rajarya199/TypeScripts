@@ -27,7 +27,7 @@ const prod1:Product={
 
 //interface extending
 
-interface person{
+interface Person{
     name:string;
 }
 
